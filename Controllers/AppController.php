@@ -9,7 +9,7 @@
 class AppController {
 
     public function loadModel($model) {
-
+        $obj = dbConn::getConnection();
     }
 
     public function render($file = null){
