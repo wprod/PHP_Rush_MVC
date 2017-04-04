@@ -1,1 +1,4 @@
-FallbackResource /index.php
+RewriteEngine on
+RewriteBase /Rendu/PHP_Rush_MVC/
+RewriteRule ^$ Webroot/ [L]
+RewriteRule (.*) Webroot/$1 [L]
