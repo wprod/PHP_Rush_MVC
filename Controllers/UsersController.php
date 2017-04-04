@@ -26,7 +26,6 @@ class UsersController extends AppController {
             $tasks[$key]['title'] = htmlspecialchars($task['title']);
             $tasks[$key]['description'] = nl2br(htmlspecialchars($task['description']));
         }
-
         return $tasks;
     }
 
@@ -41,9 +40,17 @@ class UsersController extends AppController {
         $verif_username = $this->secure_input($username);
         $verif_email = $this->secure_input($email);
         $verif_group = $this->secure_input($group);
-
-        //TODO PASSWORD
-
         Users::post_user($verif_username, $password, $verif_email, $verif_group);
+    }
+
+    public function update_user($id,$username, $password, $email, $group){
+        $verif_username = $this->secure_input($username);
+        $verif_email = $this->secure_input($email);
+        $verif_group = $this->secure_input($group);
+        Users::update_user($id, $verif_username, $password, $verif_email, $verif_group);
+    }
+
+    public function delete_user($id){
+        Users::delete_user($id);
     }
 }
