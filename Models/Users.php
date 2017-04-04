@@ -27,13 +27,13 @@ class Users
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public static function post_user($username, $password, $email, $group)
+    public static function post_user($username, $hashed_password, $email, $group)
     {
         $obj = dbConn::getConnection();
-        $stmt = $obj->prepare('INSERT INTO users (usersername, password, email, group) VALUES (:username, :password, :email, :group)');
+        $stmt = $obj->prepare('INSERT INTO users (username, hashed_password, email, group) VALUES (:username, :hashed_password, :email, :group)');
         $stmt->execute(array(
             ":username" => $username,
-            ":password" => $password,
+            ":password" => $hashed_password,
             ":email" => $email,
             ":group" => $group
         ));

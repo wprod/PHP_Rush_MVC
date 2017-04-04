@@ -1,8 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Amand
- * Date: 04/04/2017
- * Time: 09:33
- */
+abstract class Configuration {
+    const DEFAULT_SQL_USER = 'root';
+    const DEFAULT_SQL_HOST = 'localhost';
+    const DEFAULT_SQL_PASS = '';
+    const DEFAULT_SQL_DTB = 'blog_mvc';
+}
 
