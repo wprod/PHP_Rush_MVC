@@ -8,8 +8,10 @@
 
 class AppController {
 
-    public function loadModel($model) {
-        $obj = dbConn::getConnection();
+    protected $model;
+
+    public function loadModel($model){
+        $this->$model = dbConn::getConnection();
     }
 
     public function render($file = null){
