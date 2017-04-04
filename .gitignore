@@ -26,6 +26,7 @@
 *.sql
 *.sqlite
 .htaccess
+Config/configuration.php
 
 # OS generated files #
 ######################
