@@ -5,7 +5,7 @@ class dbConn{
     const DEFAULT_SQL_USER = 'root';
     const DEFAULT_SQL_HOST = 'localhost';
     const DEFAULT_SQL_PASS = '';
-    const DEFAULT_SQL_DTB = 'tasks';
+    const DEFAULT_SQL_DTB = 'blog_mvc';
 
     protected static $db;
 
