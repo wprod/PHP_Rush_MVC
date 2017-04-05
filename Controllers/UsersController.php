@@ -21,14 +21,13 @@ class UsersController extends AppController
 
     public function get_users()
     {
-        $this->render();
-        var_dump(Users::get_users());
+        $this->render(Users::get_users(), "users.html.twig");
         return Users::get_users();
     }
 
     public function get_user($id)
     {
-        var_dump(Users::get_user($id));
+        $this->render(Users::get_user($id)[0], "user.html.twig");
         return Users::get_user($id);
     }
 
