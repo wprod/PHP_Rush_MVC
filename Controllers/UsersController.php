@@ -19,14 +19,8 @@ class UsersController extends AppController {
 
     public function  get_users(){
 
-        $tasks = Users::get_users();
+        return Users::get_users();
 
-        foreach($tasks as $key => $task)
-        {
-            $tasks[$key]['title'] = htmlspecialchars($task['title']);
-            $tasks[$key]['description'] = nl2br(htmlspecialchars($task['description']));
-        }
-        return $tasks;
     }
 
     public function get_user($id){

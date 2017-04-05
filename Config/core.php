@@ -13,7 +13,7 @@ function autoload_class_multiple_directory($class_name)
     $array_paths = array(
         '../Controllers/',
         '../Models/',
-        '../router/'
+        '../Src/'
     );
 
     # Count the total item in the array.
