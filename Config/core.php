@@ -33,3 +33,13 @@ function autoload_class_multiple_directory($class_name)
 }
 
 spl_autoload_register('autoload_class_multiple_directory');
+
+
+require_once '../vendor/autoload.php';
+
+$loader = new Twig_Loader_Filesystem('../Views/Layouts/');
+$twig = new Twig_Environment($loader, array(
+    'cache' => '/path/to/compilation_cache',
+));
+
+echo $twig->render('users.twig', array('name' => 'Fabien'));
