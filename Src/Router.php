@@ -24,11 +24,6 @@ class Router
         return $this->add($path, $callable, $name, 'GET');
     }
 
-    public function post($path, $callable, $name = null)
-    {
-        return $this->add($path, $callable, $name, 'POST');
-    }
-
     private function add($path, $callable, $name, $method)
     {
         $route = new Route($path, $callable);

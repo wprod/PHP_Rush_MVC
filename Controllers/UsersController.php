@@ -21,13 +21,13 @@ class UsersController extends AppController
 
     public function get_users()
     {
-        $this->render($users = Users::get_users(), "/Layouts/users.html.twig");
+        $this->render($users = Users::get_users(), "/layouts/users.html.twig");
         return Users::get_users();
     }
 
     public function get_user($id)
     {
-        $this->render(Users::get_user($id)[0], "/Layouts/user.html.twig");
+        $this->render(Users::get_user($id)[0], "/layouts/user.html.twig");
         return Users::get_user($id);
     }
 
@@ -37,6 +37,11 @@ class UsersController extends AppController
         $verif_email = $this->secure_input($email);
         $verif_group = $this->secure_input($group);
         Users::post_user($verif_username, $password, $verif_email, $verif_group);
+    }
+
+    public function render_add_user(){
+ 
+        return $this->render([], "/form/add_user.html.twig");
     }
 
     public function update_user($id, $username, $password, $email, $group)
