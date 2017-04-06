@@ -1,0 +1,15 @@
+{% extends "/layouts/index.html.twig" %}
+{% block content %}
+    <form action="" method="post">
+        <fieldset>
+            <legend>Log-in</legend>
+            Email : <input name="email" type="email" value="{{ input_email }}"> <em>{{ error_email }}</em><br><br>
+
+            Password : <input name="password" type="password" value="{{ input_password }}"> <em>{{ error_password }}</em><br><br>
+
+            <button type="submit">Send</button>
+            <b>{{ succes }}</b>
+        </fieldset>
+
+    </form>
+{% endblock %}

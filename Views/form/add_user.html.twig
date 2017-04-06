@@ -3,11 +3,17 @@
     <form action="" method="post">
         <fieldset>
             <legend>Add_users</legend>
-            Username : <input name="username" type="text"><br><br>
-            Password : <input name="password" type="password"><br><br>
-            Email : <input name="email" type="email"><br><br>
-            Group : <input name="group" type="text"><br><br>
+
+            Username : <input name="username" type="text" value="{{ input_username }}"> <em>{{ error_username }}</em><br><br>
+
+            Password : <input name="password" type="password" value="{{ input_password }}"> <em>{{ error_password }}</em><br><br>
+
+            Email : <input name="email" type="email" value="{{ input_email }}"> <em>{{ error_email }}</em><br><br>
+
+            Group : <input name="group" type="text" value="{{ input_group }}"> <em>{{ error_group }}</em><br><br>
             <button type="submit">Send</button>
+            <b>{{ succes }}</b>
         </fieldset>
+
     </form>
 {% endblock %}

@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f72746d0-b726-4485-a5f7-82b3fc670479" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/core.php" afterPath="$PROJECT_DIR$/Config/core.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controllers/AppController.php" afterPath="$PROJECT_DIR$/Controllers/AppController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controllers/UsersController.php" afterPath="$PROJECT_DIR$/Controllers/UsersController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Src/Route.php" afterPath="$PROJECT_DIR$/Src/Route.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/Users.php" afterPath="$PROJECT_DIR$/Models/Users.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Src/Router.php" afterPath="$PROJECT_DIR$/Src/Router.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/Layouts/index.html.twig" afterPath="$PROJECT_DIR$/Views/Layouts/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/Layouts/user.html.twig" afterPath="$PROJECT_DIR$/Views/Layouts/user.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/Layouts/users.html.twig" afterPath="$PROJECT_DIR$/Views/Layouts/users.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Src/session.php" afterPath="$PROJECT_DIR$/Src/session.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/form/add_user.html.twig" afterPath="$PROJECT_DIR$/Views/form/add_user.html.twig" />
     </list>
     <ignored path="PHP_Rush_MVC.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,41 +31,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="user.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/layouts/user.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Controllers/UsersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+            <state relative-caret-position="1606">
+              <caret line="120" column="67" selection-start-line="120" selection-start-column="67" selection-end-line="120" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_user.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Views/form/add_user.html.twig">
+      <file leaf-file-name="RouterException.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Src/RouterException.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log_in.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/form/log_in.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/layouts/index.html.twig">
+      <file leaf-file-name="add_user.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/form/add_user.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+            <state relative-caret-position="324">
+              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -73,8 +74,8 @@
       <file leaf-file-name="Route.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Src/Route.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+            <state relative-caret-position="1098">
+              <caret line="64" column="36" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -83,8 +84,18 @@
       <file leaf-file-name="AppController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controllers/AppController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="612">
+              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticlesController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controllers/ArticlesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -93,7 +104,7 @@
       <file leaf-file-name="core.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Config/core.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="306">
               <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
@@ -102,12 +113,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Config/db.php">
+      <file leaf-file-name="session.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Src/session.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="450">
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+              <folding>
+                <element signature="e#6#87#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,25 +128,9 @@
       <file leaf-file-name="Router.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Src/Router.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="810">
+              <caret line="45" column="64" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Users.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Models/Users.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-              <folding>
-                <marker date="1491466762204" expanded="true" signature="253:272" placeholder="SELECT * FRO... users" />
-                <marker date="1491466762204" expanded="true" signature="477:511" placeholder="SELECT * FRO... users" />
-                <marker date="1491466762204" expanded="true" signature="796:910" placeholder="INSERT INTO users... " />
-                <marker date="1491466762204" expanded="true" signature="1350:1504" placeholder="UPDATE users... " />
-                <marker date="1491466762204" expanded="true" signature="1867:1899" placeholder="DELETE FROM " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -158,9 +155,7 @@
         <option value="$PROJECT_DIR$/dispatcher.php" />
         <option value="$PROJECT_DIR$/Src/RouteExeption.php" />
         <option value="$PROJECT_DIR$/Views/Layouts/users.twig" />
-        <option value="$PROJECT_DIR$/Models/Users.php" />
         <option value="$PROJECT_DIR$/Views/Layouts/menu.html.twig" />
-        <option value="$PROJECT_DIR$/Controllers/AppController.php" />
         <option value="$PROJECT_DIR$/Webroot/.htaccess" />
         <option value="$PROJECT_DIR$/Src/dispatcher.php" />
         <option value="$PROJECT_DIR$/Src/Dispatcher.php" />
@@ -169,10 +164,15 @@
         <option value="$PROJECT_DIR$/Views/Layouts/users.html.twig" />
         <option value="$PROJECT_DIR$/Src/Route.php" />
         <option value="$PROJECT_DIR$/Views/Layouts/index.html.twig" />
-        <option value="$PROJECT_DIR$/Config/core.php" />
-        <option value="$PROJECT_DIR$/Views/form/add_user.html.twig" />
-        <option value="$PROJECT_DIR$/Controllers/UsersController.php" />
         <option value="$PROJECT_DIR$/Src/Router.php" />
+        <option value="$PROJECT_DIR$/Controllers/AppController.php" />
+        <option value="$PROJECT_DIR$/Views/form/log-in.html.twig" />
+        <option value="$PROJECT_DIR$/Models/Users.php" />
+        <option value="$PROJECT_DIR$/Views/form/log_in.html.twig" />
+        <option value="$PROJECT_DIR$/Views/form/add_user.html.twig" />
+        <option value="$PROJECT_DIR$/Config/core.php" />
+        <option value="$PROJECT_DIR$/Src/session.php" />
+        <option value="$PROJECT_DIR$/Controllers/UsersController.php" />
       </list>
     </option>
   </component>
@@ -186,8 +186,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="782" />
-    <option name="width" value="1145" />
+    <option name="x" value="630" />
+    <option name="width" value="1297" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -243,43 +243,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP_Rush_MVC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP_Rush_MVC" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="form" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP_Rush_MVC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP_Rush_MVC" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
+              <option name="myItemId" value="Webroot" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -294,20 +258,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP_Rush_MVC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHP_Rush_MVC" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Models" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -411,18 +361,18 @@
       <workItem from="1491374927690" duration="1044000" />
       <workItem from="1491376831755" duration="22863000" />
       <workItem from="1491462236343" duration="5496000" />
-      <workItem from="1491470142162" duration="13840000" />
+      <workItem from="1491470142162" duration="24338000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67331000" />
+    <option name="totallyTimeSpent" value="77829000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="782" y="0" width="1145" height="1047" extended-state="0" />
+    <frame x="630" y="0" width="1297" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21523473" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18969555" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -459,24 +409,17 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Webroot/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Models/Users.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1044">
           <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
           <folding>
-            <marker date="1491466762204" expanded="true" signature="253:272" placeholder="SELECT * FRO... users" />
-            <marker date="1491466762204" expanded="true" signature="477:511" placeholder="SELECT * FRO... users" />
-            <marker date="1491466762204" expanded="true" signature="796:910" placeholder="INSERT INTO users... " />
-            <marker date="1491466762204" expanded="true" signature="1350:1504" placeholder="UPDATE users... " />
-            <marker date="1491466762204" expanded="true" signature="1867:1899" placeholder="DELETE FROM " />
+            <marker date="1491494807258" expanded="true" signature="253:272" placeholder="SELECT * FRO... users" />
+            <marker date="1491494807258" expanded="true" signature="477:511" placeholder="SELECT * FRO... users" />
+            <marker date="1491494807258" expanded="true" signature="763:803" placeholder="SELECT * FRO... users" />
+            <marker date="1491494807258" expanded="true" signature="1094:1208" placeholder="INSERT INTO users... " />
+            <marker date="1491494807258" expanded="true" signature="1648:1802" placeholder="UPDATE users... " />
+            <marker date="1491494807258" expanded="true" signature="2165:2197" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -539,11 +482,12 @@
         <state relative-caret-position="306">
           <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
           <folding>
-            <marker date="1491466762204" expanded="true" signature="253:272" placeholder="SELECT * FRO... users" />
-            <marker date="1491466762204" expanded="true" signature="477:511" placeholder="SELECT * FRO... users" />
-            <marker date="1491466762204" expanded="true" signature="796:910" placeholder="INSERT INTO users... " />
-            <marker date="1491466762204" expanded="true" signature="1350:1504" placeholder="UPDATE users... " />
-            <marker date="1491466762204" expanded="true" signature="1867:1899" placeholder="DELETE FROM " />
+            <marker date="1491494807258" expanded="true" signature="253:272" placeholder="SELECT * FRO... users" />
+            <marker date="1491494807258" expanded="true" signature="477:511" placeholder="SELECT * FRO... users" />
+            <marker date="1491494807258" expanded="true" signature="763:803" placeholder="SELECT * FRO... users" />
+            <marker date="1491494807258" expanded="true" signature="1094:1208" placeholder="INSERT INTO users... " />
+            <marker date="1491494807258" expanded="true" signature="1648:1802" placeholder="UPDATE users... " />
+            <marker date="1491494807258" expanded="true" signature="2165:2197" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -620,11 +564,12 @@
         <state relative-caret-position="1170">
           <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
           <folding>
-            <marker date="1491466762204" expanded="true" signature="253:272" placeholder="SELECT * FRO... users" />
-            <marker date="1491466762204" expanded="true" signature="477:511" placeholder="SELECT * FRO... users" />
-            <marker date="1491466762204" expanded="true" signature="796:910" placeholder="INSERT INTO users... " />
-            <marker date="1491466762204" expanded="true" signature="1350:1504" placeholder="UPDATE users... " />
-            <marker date="1491466762204" expanded="true" signature="1867:1899" placeholder="DELETE FROM " />
+            <marker date="1491494807258" expanded="true" signature="253:272" placeholder="SELECT * FRO... users" />
+            <marker date="1491494807258" expanded="true" signature="477:511" placeholder="SELECT * FRO... users" />
+            <marker date="1491494807258" expanded="true" signature="763:803" placeholder="SELECT * FRO... users" />
+            <marker date="1491494807258" expanded="true" signature="1094:1208" placeholder="INSERT INTO users... " />
+            <marker date="1491494807258" expanded="true" signature="1648:1802" placeholder="UPDATE users... " />
+            <marker date="1491494807258" expanded="true" signature="2165:2197" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -638,13 +583,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendors/test.php" />
     <entry file="file://$PROJECT_DIR$/Views/Layouts/action.tpl" />
-    <entry file="file://$PROJECT_DIR$/Src/session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/Articles/theme.tpl" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -654,13 +592,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dispatcher.php" />
-    <entry file="file://$PROJECT_DIR$/Src/RouterException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/BaseNodeVisitor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -752,33 +683,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/ArticlesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/Users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <marker date="1491466762204" expanded="true" signature="253:272" placeholder="SELECT * FRO... users" />
-            <marker date="1491466762204" expanded="true" signature="477:511" placeholder="SELECT * FRO... users" />
-            <marker date="1491466762204" expanded="true" signature="796:910" placeholder="INSERT INTO users... " />
-            <marker date="1491466762204" expanded="true" signature="1350:1504" placeholder="UPDATE users... " />
-            <marker date="1491466762204" expanded="true" signature="1867:1899" placeholder="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/layouts/user.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/layouts/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+          <folding>
+            <marker date="1491486015557" expanded="true" signature="474:527" placeholder="{% block content ...%}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -790,17 +709,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Models/Users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <marker date="1491494807258" expanded="true" signature="253:272" placeholder="SELECT * FRO... users" />
+            <marker date="1491494807258" expanded="true" signature="477:511" placeholder="SELECT * FRO... users" />
+            <marker date="1491494807258" expanded="true" signature="763:803" placeholder="SELECT * FRO... users" />
+            <marker date="1491494807258" expanded="true" signature="1094:1208" placeholder="INSERT INTO users... " />
+            <marker date="1491494807258" expanded="true" signature="1648:1802" placeholder="UPDATE users... " />
+            <marker date="1491494807258" expanded="true" signature="2165:2197" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Src/Route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1098">
+          <caret line="64" column="36" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Src/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="45" column="64" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/AppController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="612">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/ArticlesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Config/core.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="306">
           <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
@@ -808,42 +766,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/UsersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Src/Route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Src/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/layouts/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/form/add_user.html.twig">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Src/RouterException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Src/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/form/log_in.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1606">
+          <caret line="120" column="67" selection-start-line="120" selection-start-column="67" selection-end-line="120" selection-end-column="67" />
           <folding />
         </state>
       </provider>

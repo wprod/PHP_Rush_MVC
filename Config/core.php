@@ -37,7 +37,12 @@ $router->get('/', function () {
 });
 $router->get('/users', "Users#get_users");
 $router->get('/user_:id', "Users#get_user")->with('id', '[0-9]+');
+
 $router->get('/add_user', "Users#render_add_user");
+$router->post('/add_user', "Users#add_user_datas");
+
+$router->get('/log_in', "Users#render_log_in");
+$router->post('/log_in', "Users#log_in");
 
 $router->run();
 

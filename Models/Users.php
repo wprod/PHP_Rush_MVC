@@ -27,6 +27,15 @@ class Users
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public static function get_user_email($email)
+    {
+        $obj = dbConn::getConnection();
+        $stmt = $obj->prepare('SELECT * FROM users WHERE email = :email');
+        $stmt->bindParam(':email', $email);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     public static function post_user($username, $hashed_password, $email, $group)
     {
         $obj = dbConn::getConnection();

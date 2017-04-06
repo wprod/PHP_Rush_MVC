@@ -25,13 +25,7 @@ class AppController
             'debug' => 'true'
         ));
         $twig->addExtension(new Twig_Extension_Debug());
-
         echo $twig->render($template, $file);
-    }
-
-    public function beforeRender()
-    {
-
     }
 
     protected function redirect($param)
