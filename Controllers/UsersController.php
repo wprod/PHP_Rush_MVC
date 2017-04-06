@@ -19,6 +19,8 @@ class UsersController extends AppController
         return $data;
     }
 
+    //CRUD FUNCTIONS ______________________________________________________
+
     public function get_users()
     {
         $this->render($users = Users::get_users(), "/layouts/users.html.twig");
@@ -45,11 +47,42 @@ class UsersController extends AppController
         return true;
     }
 
+    public function update_user($id, $username, $password, $email, $group)
+    {
+        $verif_username = $this->secure_input($username);
+        $verif_email = $this->secure_input($email);
+        $verif_group = $this->secure_input($group);
+        Users::update_user($id, $verif_username, $password, $verif_email, $verif_group);
+        return true;
+    }
+
+    public function delete_user($id)
+    {
+        Users::delete_user($id);
+        return true;
+    }
+
+    //RENDER FUNCTIONS ______________________________________________________
+
     public function render_add_user()
     {
         $this->render([], "/form/add_user.html.twig");
         return true;
     }
+
+    public function render_home ()
+    {
+        $this->render([], "/layouts/index.html.twig");
+        return true;
+    }
+
+    public function render_log_in()
+    {
+        $this->render([], "/form/log_in.html.twig");
+        return true;
+    }
+
+   //ADD USERS FUNCTION ______________________________________________________
 
     public function add_user_datas ()
     {
@@ -85,6 +118,7 @@ class UsersController extends AppController
                 $feedback = array_merge($feedback, $error_group);
             }
 
+            //SEND WITH SECURE_INPUTS
             if ($flag == true){
                 $this->add_user($this->secure_input($_POST["username"]), $this->secure_input($_POST["password"]), $this->secure_input($_POST["email"]), $this->secure_input($_POST["group"]));
                 $feedback = ["succes" => "ALL GOOD BRO."];
@@ -94,11 +128,7 @@ class UsersController extends AppController
         return true;
     }
 
-    public function render_log_in()
-    {
-        $this->render([], "/form/log_in.html.twig");
-        return true;
-    }
+    // LOG IN FUNCTION ______________________________________________________
 
     public function log_in()
     {
@@ -157,18 +187,5 @@ class UsersController extends AppController
         return true;
     }
 
-    public function update_user($id, $username, $password, $email, $group)
-    {
-        $verif_username = $this->secure_input($username);
-        $verif_email = $this->secure_input($email);
-        $verif_group = $this->secure_input($group);
-        Users::update_user($id, $verif_username, $password, $verif_email, $verif_group);
-        return true;
-    }
 
-    public function delete_user($id)
-    {
-        Users::delete_user($id);
-        return true;
-    }
 }

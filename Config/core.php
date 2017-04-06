@@ -32,9 +32,9 @@ spl_autoload_register('autoload_class_multiple_directory');
 
 //DISPATCHER TODO
 $router = new Router($_GET['url']);
-$router->get('/', function () {
-    echo "Todo homepage";
-});
+
+$router->get('/', "Users#render_home");
+
 $router->get('/users', "Users#get_users");
 $router->get('/user_:id', "Users#get_user")->with('id', '[0-9]+');
 
