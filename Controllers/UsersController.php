@@ -72,6 +72,8 @@ class UsersController extends AppController
 
     public function render_home ()
     {
+        //TODOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO____________________________________________________
+        //FAIRE LA GESTION DE SESSION
         $this->render([], "/layouts/index.html.twig");
         return true;
     }
