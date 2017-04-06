@@ -1,5 +1,7 @@
+{% extends "/Layouts/index.html.twig" %}
+
 {% block content %}
-{% for user in _context %}
+{% for user in _context if user.id %}
     <div>
         <h3>{{ user.username }}</h3>
         <p>Id : {{ user.id }}</p>
