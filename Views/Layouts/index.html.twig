@@ -1,14 +1,21 @@
 {% block nav %}
 <h1>Rush php</h1>
+    {% if log %}
+        <em>Logged</em>
+    {% else %}
+        <em>Not logged</em>
+    {% endif %}
     <nav>
         <ul>
             <li><a href="./">Home</a></li>
             <li><a href="./users">Users</a></li>
             <li><a href="./add_user">Add_user</a></li>
-            <li><a href="./log_in">Log_in</a></li>
             {% if log %}
-                <li><a href="./log_out">Log_out</a></li>
+                    <li><a href="./log_out">Log_out</a></li>
+                {% else %}
+                    <li><a href="./log_in">Log_in</a></li>
             {% endif %}
+
         </ul>
     </nav>
     <hr>
@@ -16,7 +23,8 @@
 {% endblock %}
 {% block content %}
     {% if log %}
-     <p>Hello : {{ log }}</p>
+        <p>Hello : {{ log }}</p>
+        <li><a href="./log_out">Log_out</a></li>
     {% endif %}
     <h3>Accueil</h3>
 {% endblock %}

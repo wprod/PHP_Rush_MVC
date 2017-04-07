@@ -21,6 +21,10 @@ class AppController
 
     public function render($file = null, $template)
     {
+        if (isset($_SESSION["email"]))
+        {
+            $file = array_merge($file, ["log" => $_SESSION["email"]]);
+        }
         require_once '../vendor/autoload.php';
         $loader = new Twig_Loader_Filesystem('../Views/');
         $twig = new Twig_Environment($loader, array(

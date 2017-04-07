@@ -47,18 +47,17 @@ class Users
     //CREATE USER _____________________________________________________________________________________
     // ________________________________________________________________________________________________
 
-    public static function post_user($username, $hashed_password, $email, $group)
+    public static function post_user($username, $hashed_password, $email)
     {
         $obj = dbConn::getConnection();
 
-        $stmt = $obj->prepare('INSERT INTO users (username, hashed_password, email, groupe) VALUES (:username, :hashed_password, :email, :groupe)');
+        $stmt = $obj->prepare('INSERT INTO users (username, hashed_password, email) VALUES (:username, :hashed_password, :email)');
         return $stmt->execute(
             array(
                 ":username" => $username,
                 ":hashed_password" => $hashed_password,
                 ":email" => $email,
-                ":groupe" => $group
-            )
+                )
         );
     }
 

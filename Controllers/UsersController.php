@@ -39,12 +39,11 @@ class UsersController extends AppController
         return Users::get_user_email($email);
     }
 
-    public function add_user($username, $password, $email, $group)
+    public function add_user($username, $password, $email)
     {
         $verif_username = $this->secure_input($username);
         $verif_email = $this->secure_input($email);
-        $verif_group = $this->secure_input($group);
-        Users::post_user($verif_username, $password, $verif_email, $verif_group);
+        Users::post_user($verif_username, $password, $verif_email);
         return true;
     }
 
@@ -68,11 +67,6 @@ class UsersController extends AppController
 
     public function render_add_user($datas = [])
     {
-        if (isset($_SESSION["email"]))
-        {
-            $datas = array_merge($datas, ["log" => $_SESSION["email"]]);
-        }
-
         if (Session::check("groupe") != "admin")
         {
             $alert = ["alert" => "Please, log-in with an admin account."];
@@ -89,20 +83,12 @@ class UsersController extends AppController
 
     public function render_home ($datas = [])
     {
-        if (isset($_SESSION["email"]))
-        {
-            $datas = ["log" => $_SESSION["email"]];
-        }
         $this->render($datas, "/layouts/index.html.twig");
         return true;
     }
 
     public function render_log_in($datas = [])
     {
-        if (isset($_SESSION["email"]))
-        {
-            $datas = ["log" => $_SESSION["email"]];
-        }
         $this->render($datas, "/form/log_in.html.twig");
         return true;
     }
@@ -124,9 +110,9 @@ class UsersController extends AppController
     {
         $feedback = [];
         $flag = false;
-        if (isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["email"]) && isset($_POST["group"]))
+        if (isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["email"]))
         {
-            $feedback = ["input_username" => $_POST["username"], "input_password" => $_POST["password"], "input_email" => $_POST["email"], "input_group" => $_POST["group"]];
+            $feedback = ["input_username" => $_POST["username"], "input_password" => $_POST["password"], "input_email" => $_POST["email"]];
 
             $flag = true;
             if (strlen($_POST["username"]) < 3)
@@ -147,16 +133,10 @@ class UsersController extends AppController
                 $error_email = [ "error_email" => "Email to short !"];
                 $feedback = array_merge($feedback, $error_email);
             }
-            if ($_POST["group"] != "admin" && $_POST["group"] != "user")
-            {
-                $flag = false;
-                $error_group = [ "error_group" => "Group not yet defined ! use 'admin' or 'user'."];
-                $feedback = array_merge($feedback, $error_group);
-            }
 
             //SEND WITH SECURE_INPUTS
             if ($flag == true){
-                $this->add_user($this->secure_input($_POST["username"]), $this->secure_input($_POST["password"]), $this->secure_input($_POST["email"]), $this->secure_input($_POST["group"]));
+                $this->add_user($this->secure_input($_POST["username"]), $this->secure_input($_POST["password"]), $this->secure_input($_POST["email"]));
                 $feedback = ["succes" => "ALL GOOD BRO."];
             }
         }
@@ -209,9 +189,6 @@ class UsersController extends AppController
                 Session::set("email", $_POST["email"]);
                 Session::set("groupe", $groupe);
                 Session::set("status", "logged");
-                var_dump($_SESSION["email"]);
-                var_dump($_SESSION["groupe"]);
-                var_dump($_SESSION["status"]);
             }
             else
             {
@@ -224,10 +201,6 @@ class UsersController extends AppController
             {
                 $feedback = ["succes" => "YOU'RE LOGGED IN BRO."];
             }
-
-            var_dump($_SESSION["email"]);
-            var_dump($_SESSION["groupe"]);
-            var_dump($_SESSION["status"]);
         }
 
         $this->render($feedback, "/form/log_in.html.twig");

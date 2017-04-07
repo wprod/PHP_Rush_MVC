@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f72746d0-b726-4485-a5f7-82b3fc670479" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/core.php" afterPath="$PROJECT_DIR$/Config/core.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controllers/AppController.php" afterPath="$PROJECT_DIR$/Controllers/AppController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controllers/UsersController.php" afterPath="$PROJECT_DIR$/Controllers/UsersController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/Users.php" afterPath="$PROJECT_DIR$/Models/Users.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/form/add_user.html.twig" afterPath="$PROJECT_DIR$/Views/form/add_user.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/layouts/index.html.twig" afterPath="$PROJECT_DIR$/Views/layouts/index.html.twig" />
     </list>
     <ignored path="PHP_Rush_MVC.iws" />
@@ -26,11 +28,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="user.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/layouts/user.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="AppController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controllers/AppController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="468">
+              <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -46,12 +58,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controllers/UsersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
+            <state relative-caret-position="378">
+              <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Users.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Models/Users.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+              <folding>
+                <marker date="1491567796373" expanded="true" signature="461:480" placeholder="SELECT * FRO... users" />
+                <marker date="1491567796373" expanded="true" signature="894:928" placeholder="SELECT * FRO... users" />
+                <marker date="1491567796373" expanded="true" signature="1389:1429" placeholder="SELECT * FRO... users" />
+                <marker date="1491567796373" expanded="true" signature="1921:2018" placeholder="INSERT INTO users... " />
+                <marker date="1491567796373" expanded="true" signature="2635:2789" placeholder="UPDATE users... " />
+                <marker date="1491567796373" expanded="true" signature="3361:3393" placeholder="DELETE FROM " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,42 +120,18 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/layouts/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-              <folding>
-                <marker date="1491561312345" expanded="true" signature="267:360" placeholder="{% if log ...%}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="core.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Config/core.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-              <folding>
-                <element signature="e#6#87#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_user.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/form/add_user.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+            <state relative-caret-position="522">
+              <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Router.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Src/Router.php">
+      <file leaf-file-name="add_user.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Views/form/add_user.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="378">
+              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -162,15 +167,15 @@
         <option value="$PROJECT_DIR$/Views/form/log-in.html.twig" />
         <option value="$PROJECT_DIR$/Webroot/.htaccess" />
         <option value="$PROJECT_DIR$/Src/session.php" />
-        <option value="$PROJECT_DIR$/Views/form/add_user.html.twig" />
         <option value="$PROJECT_DIR$/Views/form/log_in.html.twig" />
         <option value="$PROJECT_DIR$/Config/db.php" />
-        <option value="$PROJECT_DIR$/Models/Users.php" />
         <option value="$PROJECT_DIR$/Src/Router.php" />
-        <option value="$PROJECT_DIR$/Controllers/AppController.php" />
         <option value="$PROJECT_DIR$/Config/core.php" />
+        <option value="$PROJECT_DIR$/Controllers/AppController.php" />
         <option value="$PROJECT_DIR$/Views/layouts/index.html.twig" />
         <option value="$PROJECT_DIR$/Controllers/UsersController.php" />
+        <option value="$PROJECT_DIR$/Models/Users.php" />
+        <option value="$PROJECT_DIR$/Views/form/add_user.html.twig" />
       </list>
     </option>
   </component>
@@ -424,18 +429,18 @@
       <workItem from="1491376831755" duration="22863000" />
       <workItem from="1491462236343" duration="5496000" />
       <workItem from="1491470142162" duration="27327000" />
-      <workItem from="1491548154201" duration="10838000" />
+      <workItem from="1491548154201" duration="12655000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91656000" />
+    <option name="totallyTimeSpent" value="93473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="630" y="0" width="1297" height="1047" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18969555" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18969555" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -477,12 +482,12 @@
         <state relative-caret-position="1044">
           <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
           <folding>
-            <marker date="1491559826277" expanded="true" signature="461:480" placeholder="SELECT * FRO... users" />
-            <marker date="1491559826277" expanded="true" signature="894:928" placeholder="SELECT * FRO... users" />
-            <marker date="1491559826277" expanded="true" signature="1389:1429" placeholder="SELECT * FRO... users" />
-            <marker date="1491559826277" expanded="true" signature="1929:2043" placeholder="INSERT INTO users... " />
-            <marker date="1491559826277" expanded="true" signature="2692:2846" placeholder="UPDATE users... " />
-            <marker date="1491559826277" expanded="true" signature="3418:3450" placeholder="DELETE FROM " />
+            <marker date="1491567796373" expanded="true" signature="461:480" placeholder="SELECT * FRO... users" />
+            <marker date="1491567796373" expanded="true" signature="894:928" placeholder="SELECT * FRO... users" />
+            <marker date="1491567796373" expanded="true" signature="1389:1429" placeholder="SELECT * FRO... users" />
+            <marker date="1491567796373" expanded="true" signature="1921:2018" placeholder="INSERT INTO users... " />
+            <marker date="1491567796373" expanded="true" signature="2635:2789" placeholder="UPDATE users... " />
+            <marker date="1491567796373" expanded="true" signature="3361:3393" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -544,12 +549,12 @@
         <state relative-caret-position="306">
           <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
           <folding>
-            <marker date="1491559826277" expanded="true" signature="461:480" placeholder="SELECT * FRO... users" />
-            <marker date="1491559826277" expanded="true" signature="894:928" placeholder="SELECT * FRO... users" />
-            <marker date="1491559826277" expanded="true" signature="1389:1429" placeholder="SELECT * FRO... users" />
-            <marker date="1491559826277" expanded="true" signature="1929:2043" placeholder="INSERT INTO users... " />
-            <marker date="1491559826277" expanded="true" signature="2692:2846" placeholder="UPDATE users... " />
-            <marker date="1491559826277" expanded="true" signature="3418:3450" placeholder="DELETE FROM " />
+            <marker date="1491567796373" expanded="true" signature="461:480" placeholder="SELECT * FRO... users" />
+            <marker date="1491567796373" expanded="true" signature="894:928" placeholder="SELECT * FRO... users" />
+            <marker date="1491567796373" expanded="true" signature="1389:1429" placeholder="SELECT * FRO... users" />
+            <marker date="1491567796373" expanded="true" signature="1921:2018" placeholder="INSERT INTO users... " />
+            <marker date="1491567796373" expanded="true" signature="2635:2789" placeholder="UPDATE users... " />
+            <marker date="1491567796373" expanded="true" signature="3361:3393" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -625,12 +630,12 @@
         <state relative-caret-position="1170">
           <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
           <folding>
-            <marker date="1491559826277" expanded="true" signature="461:480" placeholder="SELECT * FRO... users" />
-            <marker date="1491559826277" expanded="true" signature="894:928" placeholder="SELECT * FRO... users" />
-            <marker date="1491559826277" expanded="true" signature="1389:1429" placeholder="SELECT * FRO... users" />
-            <marker date="1491559826277" expanded="true" signature="1929:2043" placeholder="INSERT INTO users... " />
-            <marker date="1491559826277" expanded="true" signature="2692:2846" placeholder="UPDATE users... " />
-            <marker date="1491559826277" expanded="true" signature="3418:3450" placeholder="DELETE FROM " />
+            <marker date="1491567796373" expanded="true" signature="461:480" placeholder="SELECT * FRO... users" />
+            <marker date="1491567796373" expanded="true" signature="894:928" placeholder="SELECT * FRO... users" />
+            <marker date="1491567796373" expanded="true" signature="1389:1429" placeholder="SELECT * FRO... users" />
+            <marker date="1491567796373" expanded="true" signature="1921:2018" placeholder="INSERT INTO users... " />
+            <marker date="1491567796373" expanded="true" signature="2635:2789" placeholder="UPDATE users... " />
+            <marker date="1491567796373" expanded="true" signature="3361:3393" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -727,14 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/layouts/user.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Webroot/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -751,21 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models/Users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-590">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
-          <folding>
-            <marker date="1491559826277" expanded="true" signature="461:480" placeholder="SELECT * FRO... users" />
-            <marker date="1491559826277" expanded="true" signature="894:928" placeholder="SELECT * FRO... users" />
-            <marker date="1491559826277" expanded="true" signature="1389:1429" placeholder="SELECT * FRO... users" />
-            <marker date="1491559826277" expanded="true" signature="1929:2043" placeholder="INSERT INTO users... " />
-            <marker date="1491559826277" expanded="true" signature="2692:2846" placeholder="UPDATE users... " />
-            <marker date="1491559826277" expanded="true" signature="3418:3450" placeholder="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Src/Route.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
@@ -778,14 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/form/add_user.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
           <folding />
         </state>
       </provider>
@@ -826,13 +800,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/layouts/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/Controllers/AppController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <marker date="1491561312345" expanded="true" signature="267:360" placeholder="{% if log ...%}" />
-          </folding>
+        <state relative-caret-position="468">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -844,18 +816,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/AppController.php">
+    <entry file="file://$PROJECT_DIR$/Views/layouts/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="522">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/layouts/user.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/Users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding>
+            <marker date="1491567796373" expanded="true" signature="461:480" placeholder="SELECT * FRO... users" />
+            <marker date="1491567796373" expanded="true" signature="894:928" placeholder="SELECT * FRO... users" />
+            <marker date="1491567796373" expanded="true" signature="1389:1429" placeholder="SELECT * FRO... users" />
+            <marker date="1491567796373" expanded="true" signature="1921:2018" placeholder="INSERT INTO users... " />
+            <marker date="1491567796373" expanded="true" signature="2635:2789" placeholder="UPDATE users... " />
+            <marker date="1491567796373" expanded="true" signature="3361:3393" placeholder="DELETE FROM " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
+        <state relative-caret-position="378">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/form/add_user.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
           <folding />
         </state>
       </provider>
