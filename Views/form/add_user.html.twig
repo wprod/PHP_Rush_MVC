@@ -1,0 +1,22 @@
+{% extends "/index.html.twig" %}
+{% block content %}
+    {% if alert %}
+        <em>{{ alert }}</em>
+    {% else %}
+    <form action="" method="post">
+        <fieldset>
+            <legend>Add_users</legend>
+
+            Username : <input name="username" type="text" value="{{ input_username }}"> <em>{{ error_username }}</em><br><br>
+
+            Email : <input name="email" type="email" value="{{ input_email }}"> <em>{{ error_email }}</em><br><br>
+
+            Password : <input name="password" type="password" value="{{ input_password }}"> <em>{{ error_password }}</em><br><br>
+
+            <button type="submit">Send</button>
+            <b>{{ succes }}</b>
+        </fieldset>
+
+    </form>
+    {% endif %}
+{% endblock %}
