@@ -6,6 +6,14 @@
  * Time: 09:33
  */
 
+//SESSION START ___________________________________________________________________________________
+// ________________________________________________________________________________________________
+
+session_start();
+
+//AUTOLOAD ________________________________________________________________________________________
+// ________________________________________________________________________________________________
+
 function autoload_class_multiple_directory($class_name)
 {
     # List all the class directories in the array.
@@ -30,7 +38,9 @@ function autoload_class_multiple_directory($class_name)
 spl_autoload_register('autoload_class_multiple_directory');
 
 
-//DISPATCHER TODO
+//DISPATCHER ______________________________________________________________________________________
+// ________________________________________________________________________________________________
+
 $router = new Router($_GET['url']);
 
 $router->get('/', "Users#render_home");
@@ -44,5 +54,8 @@ $router->post('/add_user', "Users#add_user_datas");
 $router->get('/log_in', "Users#render_log_in");
 $router->post('/log_in', "Users#log_in");
 
+$router->get('/log_out', "Users#render_log_out");
+
 $router->run();
+
 

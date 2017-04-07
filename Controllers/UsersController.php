@@ -19,7 +19,8 @@ class UsersController extends AppController
         return $data;
     }
 
-    //CRUD FUNCTIONS ______________________________________________________
+    //CRUD FUNCTIONS __________________________________________________________________________________
+    // ________________________________________________________________________________________________
 
     public function get_users()
     {
@@ -62,19 +63,31 @@ class UsersController extends AppController
         return true;
     }
 
-    //RENDER FUNCTIONS ______________________________________________________
+    //RENDER FUNCTIONS ________________________________________________________________________________
+    // ________________________________________________________________________________________________
 
-    public function render_add_user()
+    public function render_add_user($data = [])
     {
-        $this->render([], "/form/add_user.html.twig");
-        return true;
+        if (Session::check("groupe") != "admin")
+        {
+            $this->render(["alert" => "Please, log-in with an admin account."], "/form/add_user.html.twig");
+            return true;
+        }
+        else
+        {
+            $this->render($data, "/form/add_user.html.twig");
+            return true;
+        }
     }
 
     public function render_home ()
     {
-        //TODOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO____________________________________________________
-        //FAIRE LA GESTION DE SESSION
-        $this->render([], "/layouts/index.html.twig");
+        $datas = [];
+        if (isset($_SESSION["email"]))
+        {
+            $datas = ["log" => $_SESSION["email"]];
+        }
+        $this->render($datas, "/layouts/index.html.twig");
         return true;
     }
 
@@ -84,7 +97,17 @@ class UsersController extends AppController
         return true;
     }
 
-   //ADD USERS FUNCTION ______________________________________________________
+    public function render_log_out()
+    {
+        Session::delete("email");
+        Session::delete("groupe");
+        Session::delete("status");
+        $this->render_home ();
+        return true;
+    }
+
+    //ADD USERS FUNCTION ______________________________________________________________________________
+    // ________________________________________________________________________________________________
 
     public function add_user_datas ()
     {
@@ -126,11 +149,12 @@ class UsersController extends AppController
                 $feedback = ["succes" => "ALL GOOD BRO."];
             }
         }
-        $this->render($feedback, "/form/add_user.html.twig");
+        $this->render_add_user($feedback);
         return true;
     }
 
-    // LOG IN FUNCTION ______________________________________________________
+    // LOG IN FUNCTION ________________________________________________________________________________
+    // ________________________________________________________________________________________________
 
     public function log_in()
     {
@@ -153,6 +177,7 @@ class UsersController extends AppController
                 if (Users::get_user_email($_POST["email"]) != null)
                 {
                     $password = Users::get_user_email($_POST["email"]);
+                    $groupe = $password[0]["groupe"];
                     $password = $password[0]["hashed_password"];
                 }
                 else
@@ -170,7 +195,12 @@ class UsersController extends AppController
             }
             else if ($_POST["password"] == $password)
             {
-                Session::set($_POST["email"], "logged");
+                Session::set("email", $_POST["email"]);
+                Session::set("groupe", $groupe);
+                Session::set("status", "logged");
+                var_dump($_SESSION["email"]);
+                var_dump($_SESSION["groupe"]);
+                var_dump($_SESSION["status"]);
             }
             else
             {
@@ -183,6 +213,10 @@ class UsersController extends AppController
             {
                 $feedback = ["succes" => "YOU'RE LOGGED IN BRO."];
             }
+
+            var_dump($_SESSION["email"]);
+            var_dump($_SESSION["groupe"]);
+            var_dump($_SESSION["status"]);
         }
 
         $this->render($feedback, "/form/log_in.html.twig");

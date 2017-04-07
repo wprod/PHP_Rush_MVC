@@ -1,5 +1,4 @@
 {% block nav %}
-    <p>{{ log }}</p>
 <h1>Rush php</h1>
     <nav>
         <ul>
@@ -7,6 +6,7 @@
             <li><a href="./users">Users</a></li>
             <li><a href="./add_user">Add_user</a></li>
             <li><a href="./log_in">Log_in</a></li>
+            <li><a href="./log_out">Log_out</a></li>
             <li>
                 <ul>
                     <li><a href="./user_1">User 1</a></li>
@@ -20,5 +20,8 @@
     <hr>
 {% endblock %}
 {% block content %}
-    <p>Accueil</p>
+    {% if log %}
+     <p>Hello : {{ log }}</p>
+    {% endif %}
+    <h3>Accueil</h3>
 {% endblock %}

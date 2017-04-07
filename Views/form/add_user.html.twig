@@ -1,5 +1,8 @@
 {% extends "/layouts/index.html.twig" %}
 {% block content %}
+    {% if alert %}
+        <em>{{ alert }}</em>
+    {% else %}
     <form action="" method="post">
         <fieldset>
             <legend>Add_users</legend>
@@ -16,4 +19,5 @@
         </fieldset>
 
     </form>
+    {% endif %}
 {% endblock %}
