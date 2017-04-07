@@ -9,6 +9,8 @@ include_once "../Config/db.php";
 
 class Users
 {
+    //GET USERS _______________________________________________________________________________________
+    // ________________________________________________________________________________________________
 
     public static function get_users()
     {
@@ -17,6 +19,9 @@ class Users
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    //GET USER ________________________________________________________________________________________
+    // ________________________________________________________________________________________________
 
     public static function get_user($id)
     {
@@ -27,20 +32,37 @@ class Users
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public static function post_user($username, $hashed_password, $email, $group)
+    //GET USER  BY EMAIL ______________________________________________________________________________
+    // ________________________________________________________________________________________________
+
+    public static function get_user_email($email)
+    {
+        $obj = dbConn::getConnection();
+        $stmt = $obj->prepare('SELECT * FROM users WHERE email = :email');
+        $stmt->bindParam(':email', $email);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    //CREATE USER _____________________________________________________________________________________
+    // ________________________________________________________________________________________________
+
+    public static function post_user($username, $hashed_password, $email)
     {
         $obj = dbConn::getConnection();
 
-        $stmt = $obj->prepare('INSERT INTO users (username, hashed_password, email, groupe) VALUES (:username, :hashed_password, :email, :groupe)');
+        $stmt = $obj->prepare('INSERT INTO users (username, hashed_password, email) VALUES (:username, :hashed_password, :email)');
         return $stmt->execute(
             array(
                 ":username" => $username,
                 ":hashed_password" => $hashed_password,
                 ":email" => $email,
-                ":groupe" => $group
-            )
+                )
         );
     }
+
+    //UPDATE USER _____________________________________________________________________________________
+    // ________________________________________________________________________________________________
 
     public static function update_user($id, $username, $email, $hashed_password, $groupe)
     {
@@ -57,6 +79,9 @@ class Users
             ":groupe" => $groupe
         ));
     }
+
+    //DELETE USER BY ID _______________________________________________________________________________
+    // ________________________________________________________________________________________________
 
     public static function delete_user($id)
     {
