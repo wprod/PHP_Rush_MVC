@@ -1,0 +1,19 @@
+{% extends "/index.html.twig" %}
+
+{% block content %}
+{% for user in _context if user.id %}
+    <div>
+        <h3>{{ user.username }}</h3>
+        <p>Id : {{ user.id }}</p>
+        <p>Email : {{ user.email }}</p>
+        <p>Other informations :</p>
+        <ul>
+            <li>Groupe : {{ user.groupe }}</li>
+            <li>Status : {{ user.status }}</li>
+            <li>Creation date : {{ user.creation_date }}</li>
+            <li>Last modification : {{ user.modification_date }}</li>
+        </ul>
+        <hr>
+    </div>
+{% endfor %}
+{% endblock %}

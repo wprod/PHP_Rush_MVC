@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: Amand
@@ -6,23 +7,41 @@
  * Time: 11:27
  */
 
-class AppController {
+class AppController
+{
 
     protected $model;
 
-    public function loadModel($model){
+    public function loadModel($model)
+    {
         $this->$model = dbConn::getConnection();
     }
 
-    public function render($file = null){
+    //CORE RENDER _____________________________________________________________________________________
+    // ________________________________________________________________________________________________
 
+    public function render($file = null, $template)
+    {
+        if (isset($_SESSION["email"]))
+        {
+            $file = array_merge($file, ["log" => $_SESSION["email"]]);
+        }
+        require_once '../vendor/autoload.php';
+        $loader = new Twig_Loader_Filesystem('../Views/');
+        $twig = new Twig_Environment($loader, array(
+            'cache' => false,
+            'debug' => true
+        ));
+        $twig->addExtension(new Twig_Extension_Debug());
+        echo $twig->render($template, $file);
     }
 
-    public function beforeRender(){
+    //REDIRECT ________________________________________________________________________________________
+    // ________________________________________________________________________________________________
 
-    }
-
-    protected function redirect($param){
-
+    protected function redirect($param)
+    {
+        header('Location: '.$param);
+        die();
     }
 }

@@ -1,0 +1,17 @@
+{% extends "/index.html.twig" %}
+
+{% block content %}
+    {% for articles in _context if articles.id %}
+        <div>
+            <h3>{{ articles.title }}</h3>
+            <p>Id : {{ articles.id }}</p>
+            <p>Content : {{ articles.content }}</p>
+            <p>Other informations :</p>
+            <ul>
+                <li>Creation date : {{ articles.creation_date }}</li>
+                <li>Last modification : {{ articles.modification_date }}</li>
+            </ul>
+            <hr>
+        </div>
+    {% endfor %}
+{% endblock %}

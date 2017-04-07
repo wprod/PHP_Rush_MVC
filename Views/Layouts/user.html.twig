@@ -1,0 +1,16 @@
+{% extends "/index.html.twig" %}
+{% block content %}
+<div>
+    <h3>{{ username }}</h3>
+    <p>Id : {{ id }}</p>
+    <p>Email : {{ email }}</p>
+    <p>Other informations :</p>
+    <ul>
+        <li>Groupe : {{ groupe }}</li>
+        <li>Status : {{ status }}</li>
+        <li>Creation date : {{ creation_date }}</li>
+        <li>Last modification : {{ modification_date }}</li>
+    </ul>
+    <hr>
+</div>
+{% endblock %}
