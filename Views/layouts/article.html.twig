@@ -1,0 +1,15 @@
+{% extends "/layouts/index.html.twig" %}
+
+{% block content %}
+    <div>
+        <h3>{{ title }}</h3>
+        <p>Id : {{ id }}</p>
+        <p>Content : {{ content }}</p>
+        <p>Other informations :</p>
+        <ul>
+            <li>Creation date : {{ creation_date }}</li>
+            <li>Last modification : {{ modification_date }}</li>
+        </ul>
+        <hr>
+    </div>
+{% endblock %}

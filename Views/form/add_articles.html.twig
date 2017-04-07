@@ -1,0 +1,24 @@
+{% extends "/layouts/index.html.twig" %}
+{% block content %}
+    {% if alert %}
+        <em>{{ alert }}</em>
+    {% else %}
+        <form action="" method="post">
+            <fieldset>
+                <legend>Add_users</legend>
+
+                title : <input name="title" type="text" value="{{ input_title }}"> <em>{{ error_title }}</em><br><br>
+
+                content : <textarea name="content">{{ input_content }}</textarea> <em>{{ error_content }}</em><br><br>
+
+                author_id : <input name="author_id" type="text" value="{{ input_author_id }}"> <em>{{ error_author_id }}</em><br><br>
+
+                category_id : <input name="category_id" type="text" value="{{ input_category_id }}"> <em>{{ error_category_id }}</em><br><br>
+
+                <button type="submit">Send</button>
+                <b>{{ succes }}</b>
+            </fieldset>
+
+        </form>
+    {% endif %}
+{% endblock %}
