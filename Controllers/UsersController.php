@@ -66,23 +66,29 @@ class UsersController extends AppController
     //RENDER FUNCTIONS ________________________________________________________________________________
     // ________________________________________________________________________________________________
 
-    public function render_add_user($data = [])
+    public function render_add_user($datas = [])
     {
+        if (isset($_SESSION["email"]))
+        {
+            $datas = array_merge($datas, ["log" => $_SESSION["email"]]);
+        }
+
         if (Session::check("groupe") != "admin")
         {
-            $this->render(["alert" => "Please, log-in with an admin account."], "/form/add_user.html.twig");
+            $alert = ["alert" => "Please, log-in with an admin account."];
+            $datas = array_merge($datas, $alert);
+            $this->render( $datas, "/form/add_user.html.twig");
             return true;
         }
         else
         {
-            $this->render($data, "/form/add_user.html.twig");
+            $this->render($datas, "/form/add_user.html.twig");
             return true;
         }
     }
 
-    public function render_home ()
+    public function render_home ($datas = [])
     {
-        $datas = [];
         if (isset($_SESSION["email"]))
         {
             $datas = ["log" => $_SESSION["email"]];
@@ -91,9 +97,13 @@ class UsersController extends AppController
         return true;
     }
 
-    public function render_log_in()
+    public function render_log_in($datas = [])
     {
-        $this->render([], "/form/log_in.html.twig");
+        if (isset($_SESSION["email"]))
+        {
+            $datas = ["log" => $_SESSION["email"]];
+        }
+        $this->render($datas, "/form/log_in.html.twig");
         return true;
     }
 
@@ -102,7 +112,8 @@ class UsersController extends AppController
         Session::delete("email");
         Session::delete("groupe");
         Session::delete("status");
-        $this->render_home ();
+
+        $this->render_home();
         return true;
     }
 

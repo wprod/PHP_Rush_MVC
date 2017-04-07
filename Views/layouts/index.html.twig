@@ -6,14 +6,9 @@
             <li><a href="./users">Users</a></li>
             <li><a href="./add_user">Add_user</a></li>
             <li><a href="./log_in">Log_in</a></li>
-            <li><a href="./log_out">Log_out</a></li>
-            <li>
-                <ul>
-                    <li><a href="./user_1">User 1</a></li>
-                    <li><a href="./user_2">User 2</a></li>
-                    <li><a href="./user_3">User 3</a></li>
-                </ul>
-            </li>
+            {% if log %}
+                <li><a href="./log_out">Log_out</a></li>
+            {% endif %}
         </ul>
     </nav>
     <hr>

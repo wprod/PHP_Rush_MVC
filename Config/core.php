@@ -41,7 +41,7 @@ spl_autoload_register('autoload_class_multiple_directory');
 //DISPATCHER ______________________________________________________________________________________
 // ________________________________________________________________________________________________
 
-$router = new Router($_GET['url']);
+$router = new Router(isset($_GET['url']) ? $_GET['url'] : "/");
 
 $router->get('/', "Users#render_home");
 
