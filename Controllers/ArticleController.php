@@ -47,8 +47,18 @@ class ArticleController extends AppController
 
     public function render_add_article($datas = [])
     {
+        if (Session::check("groupe") != "admin")
+        {
+            $alert = ["alert" => "Please, log-in with an admin account."];
+            $datas = array_merge($datas, $alert);
             $this->render($datas, "/form/add_article.html.twig");
             return true;
+        }
+        else
+        {
+            $this->render($datas, "/form/add_article.html.twig");
+            return true;
+        }
     }
 
     public function render_display_articles($datas = [])

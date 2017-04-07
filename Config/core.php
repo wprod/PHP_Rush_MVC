@@ -59,6 +59,9 @@ $router->get('/log_out', "Users#render_log_out");
 $router->get('/articles', "Article#get_articles");
 $router->get('/article_:id', "Article#get_article")->with('id', '[0-9]+');
 
+$router->get('/add_article', "Article#render_add_article");
+$router->post('/add_article', "Article#add_article_datas");
+
 $router->run();
 
 

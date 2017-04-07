@@ -83,7 +83,7 @@ class UsersController extends AppController
 
     public function render_home ($datas = [])
     {
-        $this->render($datas, "/layouts/index.html.twig");
+        $this->render($datas, "/index.html.twig");
         return true;
     }
 
